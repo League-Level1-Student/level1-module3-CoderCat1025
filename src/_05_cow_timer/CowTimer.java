@@ -33,12 +33,20 @@ public class CowTimer {
     }
 
     public void start() throws InterruptedException {
-        
+    	for (int e = seconds; e > 0; e--) {
+        System.out.println(e);
+        Thread.sleep(1000);
+    	}
+    	playSound("moo.wav");
     }
 
     public void playSound(final String file) {
         String fileName = "_05_cow_timer/" + file;
         Sound sound = new Sound(fileName);
         sound.play();
+    }
+    
+    public CowTimer (int seconds2) {
+    	setTime(seconds2);
     }
 }

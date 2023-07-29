@@ -10,8 +10,8 @@ public class Circle {
     /*
      * Add/remove the word "static" at the beginning of these variables
      */
-    static int radius;
-    static Color color;
+    int radius;
+    Color color;
 
     public Circle(int r, Color c) {
         radius = r;
